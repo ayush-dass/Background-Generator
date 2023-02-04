@@ -1,0 +1,100 @@
+body {
+	font-family: 'Average Sans', sans-serif;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(60deg, rgb(97, 0, 133) , rgb(0, 255, 140)) no-repeat center center fixed;
+    padding-top: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        width: 40rem; 
+    }
+}
+
+h1{
+    font:  600 3.5em 'Average Sans', sans-serif;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    width: 100%;
+}
+
+h2 {
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.btn-container {
+    padding-top: 30px;
+}
+.color1 , .color2 {
+    background: #dddddde3; 
+    border-style: none;
+}
+.btn {
+    padding: 7px;
+    font: bold 1em 'Average Sans', sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.427);
+    border-radius: 300px;
+    border-style: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    transition: all 1s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.85);
+} 
+
+.copy-css{
+    --height: 40px;
+    display: flex;
+    max-width: 580px;
+    margin: auto;
+}
+
+.copy-code-input{
+    flex-grow: 1;
+    padding: 0 8px;
+    font: 900 1em 'Average Sans', sans-serif;
+    border-style: none;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.427);
+}
+
+.copy-css-button:hover{
+    background-color: rgba(255, 255, 255, 0.427);
+    transition: all 0.5s;
+}
+
+.copy-css-button {
+    flex-shrink: 0;
+    width: var(--height);
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dddddde3;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    transition: all 0.5s;
+}
+
+.btn-container{
+    padding-top: 50px;
+}
