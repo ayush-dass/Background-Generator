@@ -2,6 +2,7 @@ var css = document.querySelector(".copy-code-input");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.querySelector(".gradient");
+var copyButton = document.querySelector(".copy-css-button");
 
 function setGradient()
 {
@@ -41,20 +42,14 @@ generateBtn.addEventListener("click", generateGradient);
 // window.onload = generateGradient;
 
 //COPY CODE
-document.querySelectorAll(".copy-css").forEach((copyLinkParent) => {
-    const inputField = copyLinkParent.querySelector(".copy-code-input");
-    const copyButton = copyLinkParent.querySelector(".copy-css-button");
-    const text = inputField.value;
-    inputField.addEventListener("focus", () => inputField.select());
-  
-    copyButton.addEventListener("click", () => {
-        inputField.select();
-        navigator.clipboard.writeText(text);
-  
-        inputField.value = "Copied !";
-        setTimeout(() => (inputField.value = text), 2000);
-    });
-  });
-  
+let copyGradient = () => {
+    const text = css.value;
+    css.select();
+    navigator.clipboard.writeText(text);
 
-    
+    css.value = "Copied !";
+    setTimeout(() => (css.value = text), 1000);
+}
+
+copyButton.addEventListener("click", copyGradient); 
+css.addEventListener("focus", () => css.select());
